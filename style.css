@@ -1,10 +1,21 @@
+body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
 .container{
-    width: 960px;
+   width: 460px;
+}
+
+.row{
+    display: flex;
 }
 
 .box{
     background-color: white;
-    width: 30px;
+    padding: 10px;
     border: 1px solid;
-    height: 30px;
+    flex:1;
 }
