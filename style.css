@@ -19,3 +19,7 @@ body{
     border: 1px solid;
     flex:1;
 }
+
+.hovered{
+    background-color: blueviolet;
+}
