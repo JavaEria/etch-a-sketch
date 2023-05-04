@@ -16,6 +16,9 @@ h1{
     display: flex;
 }
 
+#rangeLabel{
+    font-size: 32px;
+}
 
 .left-panel{
     display: flex ;

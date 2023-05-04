@@ -38,13 +38,12 @@ function addHoverListeners() {
 drawGrids();
 addHoverListeners();
 
-const gridButton = document.querySelector(".option");
-gridButton.addEventListener("click", (event) => {
-  gridNumber = prompt("Enter Grid Squares per Side value (10-100):", 60);
-  if (gridNumber >= 10 && gridNumber <= 100) {
-    numberSquares = gridNumber;
-    redrawGrids();
-  }
+const gridRangeInput = document.getElementById("gridInput");
+const gridRangeLabel = document.getElementById("rangeLabel");
+gridRangeInput.addEventListener("input", () => {
+  numberSquares = gridRangeInput.value;
+  gridRangeLabel.textContent = `${numberSquares} x ${numberSquares}`;
+  redrawGrids();
 });
 
 const refreshButton = document.querySelector(".refresh");

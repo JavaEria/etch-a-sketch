@@ -12,7 +12,10 @@
     <h1>Etch-a-Sketch</h1>
     <div class="main">
         <div class="left-panel">
-            <button class="option">Change Grid Squares</button>
+            <label id="rangeLabel">16 x 16</label>
+            <input id="gridInput" type="range" value="16" min="10" max="100">
+            <button class="color">Color Mode</button>
+            <button class="rainbow">Rainbow Mode</button>
             <button class="refresh">Clear</button>
         </div>
         <div class="container"></div>
