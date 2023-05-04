@@ -1,25 +1,37 @@
 body{
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
+    display: flex;
+    font-family: Roboto ;
 }
 
+.left-panel{
+    display: flex ;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 0.2;
+    background-color: blueviolet;
+}
+
+.left-panel > button{
+   margin: 10px 0px;
+   padding: 5px 10px;
+   
+}
 
 .container{
-   width: 460px;
+   border: 2px solid;
+   width: auto;
 }
 
 .row{
     display: flex;
+    width: 960px;
 }
 
 .box{
     background-color: white;
-    padding: 10px;
-    border: 1px solid;
     flex:1;
-}
-
-.hovered{
-    background-color: blueviolet;
+    padding:5px;
+    width: auto;
+    border: 1px solid;
 }
